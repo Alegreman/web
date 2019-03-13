@@ -1,0 +1,8 @@
+<h1>Proyectos</h1>
+
+<ul *ngIf="projects">
+  <li *ngFor="let project of projects.data">
+    <img [src]="project.avatar">
+    <p>{{ project.first_name }} {{ project.last_name }}</p>
+  </li>
+</ul>
