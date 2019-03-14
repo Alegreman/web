@@ -8,7 +8,5 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
   
-  getProjects(){
-    return this.http.get('https://reqres.in/api/users')
-  }
+ 
 }

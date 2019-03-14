@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from "../data.service";
+import { PROJECTS } from "../mocks/projects_demo";
 
 @Component({
   selector: 'app-home',
@@ -7,16 +8,13 @@ import { DataService } from "../data.service";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  projects: Object;
+  projects:Object;
 
   constructor(private data:DataService) { }
 
   ngOnInit() {
-    this.data.getProjects().subscribe(projectData => {
-      this.projects = projectData
-      console.log(this.projects)
-    });
+    this.projects = PROJECTS;
+    
   }
 
 }

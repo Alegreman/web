@@ -1,11 +1,10 @@
 header {
-    background: #7700FF;
+    background: rgb(0, 0, 0);
 
     .logo {
-        font-weight: bold;
-        border-radius: 50%;
-        height: 55px;
-        width: 75px;
+        border-radius: 10%;
+       height: inherit;
+        width: inherit;
 
     }
 
@@ -22,11 +21,8 @@ header {
                     font-size: .8em;
                     font-weight: bold;
                     &:hover {
-                        background: #8E2BFF;
+                        background: rgb(89, 89, 90);
                     }
-                
-                    
-                    
                 }
             }
         }

@@ -19,7 +19,7 @@ import { ReactiveFormsModule } from "@angular/forms";
     NavComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule
